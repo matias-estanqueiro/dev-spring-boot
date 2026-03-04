@@ -1,0 +1,50 @@
+# ==========================================
+# Archivos de Construcción (Build)
+# ==========================================
+# Ignora todas las carpetas target generadas por Maven en cualquier subnivel
+target/
+*.class
+
+# Empaquetados
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# ==========================================
+# Configuraciones de IDEs
+# ==========================================
+# VS Code
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse / Spring Tool Suite
+.settings/
+.project
+.classpath
+.springBeans
+.sts4-cache/
+.apt_generated/
+
+# ==========================================
+# Logs y Archivos del Sistema Operativo
+# ==========================================
+*.log
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# Archivos de caché de Maven
+# ==========================================
+.mvn/timing.properties
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
