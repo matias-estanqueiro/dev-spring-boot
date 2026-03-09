@@ -17,7 +17,10 @@ El repositorio está organizado en subdirectorios que corresponden a las seccion
 
 * **/01-spring-boot-quickstart:** Fundamentos de inicialización. Demuestra la auto-configuración del framework (`@SpringBootApplication`), la creación de endpoints básicos (`@RestController`, `@GetMapping`) y el manejo de propiedades externas (`application.properties`).
 * **/02-spring-core:** Fundamentos arquitectónicos. Implementación de los patrones de Inversión de Control (IoC) e Inyección de Dependencias (DI). Cubre la gestión del contenedor de Spring, la resolución de ambigüedades (`@Primary`, `@Qualifier`), el alcance de los objetos (Singleton vs Prototype) y el ciclo de vida de los Beans (`@PostConstruct`, `@PreDestroy`).
-* *(Próximamente: Acceso a datos con Hibernate/JPA, APIs REST avanzadas, Spring Security, etc.)*
+* **/03-hibernate-jpa-crud:** Persistencia de datos. Implementación del patrón de diseño DAO y mapeo objeto-relacional (ORM) utilizando Hibernate y la API de JPA (`@Entity`, `@Id`, `@GeneratedValue`). Gestión del contexto de persistencia mediante `EntityManager`, control automático de transacciones con `@Transactional` y consultas a objetos con JPQL.
+* **/04-spring-boot-rest-crud:** Construcción de APIs RESTful corporativas. Arquitectura limpia de tres capas (Controller, Service, Repository), manejo global y estructurado de excepciones (`@ControllerAdvice`, `@ExceptionHandler`) y automatización del acceso a datos mediante Spring Data JPA y Spring Data REST. Incluye también la generación de documentación interactiva con OpenAPI y Swagger UI.
+
+*(Próximamente: Spring Security, Spring MVC, Thymeleaf, AOP, etc.)*
 
 ## Ejecución Local
 
