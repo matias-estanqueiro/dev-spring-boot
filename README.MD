@@ -19,8 +19,9 @@ El repositorio está organizado en subdirectorios que corresponden a las seccion
 * **/02-spring-core:** Fundamentos arquitectónicos. Implementación de los patrones de Inversión de Control (IoC) e Inyección de Dependencias (DI). Cubre la gestión del contenedor de Spring, la resolución de ambigüedades (`@Primary`, `@Qualifier`), el alcance de los objetos (Singleton vs Prototype) y el ciclo de vida de los Beans (`@PostConstruct`, `@PreDestroy`).
 * **/03-hibernate-jpa-crud:** Persistencia de datos. Implementación del patrón de diseño DAO y mapeo objeto-relacional (ORM) utilizando Hibernate y la API de JPA (`@Entity`, `@Id`, `@GeneratedValue`). Gestión del contexto de persistencia mediante `EntityManager`, control automático de transacciones con `@Transactional` y consultas a objetos con JPQL.
 * **/04-spring-boot-rest-crud:** Construcción de APIs RESTful corporativas. Arquitectura limpia de tres capas (Controller, Service, Repository), manejo global y estructurado de excepciones (`@ControllerAdvice`, `@ExceptionHandler`) y automatización del acceso a datos mediante Spring Data JPA y Spring Data REST. Incluye también la generación de documentación interactiva con OpenAPI y Swagger UI.
+* **/05-spring-boot-rest-security:** Protección y blindaje de APIs REST. Implementación de Spring Security para autenticación y autorización basada en roles (RBAC). Evolución desde configuraciones en memoria (In-Memory) hacia la validación contra bases de datos (JDBC) con contraseñas encriptadas (BCrypt). Incluye la arquitectura avanzada de seguridad integrando entidades JPA/Hibernate personalizadas mediante `UserDetailsService`.
 
-*(Próximamente: Spring Security, Spring MVC, Thymeleaf, AOP, etc.)*
+*(Próximamente: Spring MVC, Thymeleaf, Spring Boot AOP, etc.)*
 
 ## Ejecución Local
 
