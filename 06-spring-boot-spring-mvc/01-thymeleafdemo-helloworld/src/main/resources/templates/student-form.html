@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" th:href="@{/css/demo.css}">
+</head>
+<body>
+    <h3>Student Form</h3>
+    <form th:action="@{/processStudentForm}"  th:object="${student}" method="POST" class="student-form">
+        <label for="studentFirstName">First Name:</label>
+        <input type="text" id="studentFirstName" th:field="*{firstName}" placeholder="What's your first name?">
+        
+        <label for="studentLastName">Last Name:</label>
+        <input type="text" id="studentLastName" th:field="*{lastName}" placeholder="What's your last name?">
+        
+        <label for="studentCountry">Country:</label>
+        <select id="studentCountry" th:field="*{country}">
+            <option value="" disabled selected>Select your country</option>
+            <option th:each="loopCountry : ${countries}" th:value="${loopCountry}" th:text="${loopCountry}"></option>
+        </select>
+
+        <radio-group class="radio-group">
+            <label>Programming Language:</label>
+            <div th:each="loopLanguage : ${programmingLanguages}">
+                <input type="radio" th:id="${loopLanguage}" th:name="programmingLanguage" th:value="${loopLanguage}" th:field="*{programmingLanguage}">
+                <label th:for="${loopLanguage}" th:text="${loopLanguage}"></label>
+            </div>
+        </radio-group>
+
+        <label>Operating Systems:</label>
+        <div th:each="loopOS : ${operatingSystems}">
+            <input type="checkbox" th:id="${loopOS}" th:name="operatingSystems" th:value="${loopOS}" th:field="*{operatingSystems}">
+            <label th:for="${loopOS}" th:text="${loopOS}"></label>
+        </div>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

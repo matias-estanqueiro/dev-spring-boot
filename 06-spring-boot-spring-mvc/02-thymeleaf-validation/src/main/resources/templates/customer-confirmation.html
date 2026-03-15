@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Customer Confirmation</title>
+</head>
+<body>
+    <div class="max-w-md mx-auto mt-10">
+        <h1 class="text-2xl font-bold mb-4">Customer Confirmation</h1>
+        <p class="mb-2">First Name: <span th:text="${customer.firstName}"></span></p>
+        <p class="mb-2">Last Name: <span th:text="${customer.lastName}"></span></p>
+        <p class="mb-2">Free Passes: <span th:text="${customer.freePasses}"></span></p>
+        <p class="mb-4">Postal Code: <span th:text="${customer.postalCode}"></span></p>
+        <p class="mb-4">Course Code: <span th:text="${customer.courseCode}"></span></p>
+        <a href="/showForm" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Back to Form</a>
+    </div>
+</body>
+</html>
