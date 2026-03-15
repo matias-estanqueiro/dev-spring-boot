@@ -20,8 +20,9 @@ El repositorio está organizado en subdirectorios que corresponden a las seccion
 * **/03-hibernate-jpa-crud:** Persistencia de datos. Implementación del patrón de diseño DAO y mapeo objeto-relacional (ORM) utilizando Hibernate y la API de JPA (`@Entity`, `@Id`, `@GeneratedValue`). Gestión del contexto de persistencia mediante `EntityManager`, control automático de transacciones con `@Transactional` y consultas a objetos con JPQL.
 * **/04-spring-boot-rest-crud:** Construcción de APIs RESTful corporativas. Arquitectura limpia de tres capas (Controller, Service, Repository), manejo global y estructurado de excepciones (`@ControllerAdvice`, `@ExceptionHandler`) y automatización del acceso a datos mediante Spring Data JPA y Spring Data REST. Incluye también la generación de documentación interactiva con OpenAPI y Swagger UI.
 * **/05-spring-boot-rest-security:** Protección y blindaje de APIs REST. Implementación de Spring Security para autenticación y autorización basada en roles (RBAC). Evolución desde configuraciones en memoria (In-Memory) hacia la validación contra bases de datos (JDBC) con contraseñas encriptadas (BCrypt). Incluye la arquitectura avanzada de seguridad integrando entidades JPA/Hibernate personalizadas mediante `UserDetailsService`.
+* **/06-spring-boot-spring-mvc:** Desarrollo de aplicaciones web con el patrón Model-View-Controller. Renderización de vistas dinámicas en el servidor utilizando **Thymeleaf** (Data Binding, atributos `th:`). Implementación de validaciones robustas de formularios con **Jakarta Bean Validation** (`@Valid`, `@NotNull`, `@Size`, `@Pattern`). Manejo de errores con `BindingResult`, personalización de mensajes (`messages.properties`), pre-procesamiento de peticiones con `@InitBinder` y creación de anotaciones de validación personalizadas (Custom Constraints).
 
-*(Próximamente: Spring MVC, Thymeleaf, Spring Boot AOP, etc.)*
+*(Próximamente: Spring MVC avanzado, AOP, etc.)*
 
 ## Ejecución Local
 
