@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+                xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Company HomePage</title>
+</head>
+<body>
+    <div class="text-2xl font-bold text-center py-4">Company HomePage</div>
+    <hr>
+    <div class="p-4">
+        <p>Welcome to the company homepage. Here you can find the latest updates and information about our services.</p>
+    </div>
+    <hr>
+    <div class="p-4">
+        <p>USER: <span class="font-bold" sec:authentication="principal.username"></span></p>
+        <p>ROLE: <span class="font-bold" sec:authentication="principal.authorities"></span></p>
+    </div>
+    <hr>
+    <div class="p-4">
+        <div sec:authorize="hasRole('MANAGER')">
+            <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" th:href="@{/leaders}">Leaders Info</a>
+        </div>
+        <div sec:authorize="hasRole('ADMIN')">
+            <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" th:href="@{/admin}">Admin System Info</a>
+        </div>
+    </div>
+    <hr>
+    <div class="p-4">
+        <form th:action="@{/logout}" method="POST">
+           <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Log Out</button>
+        </form>
+    </div>
+</body>
+</html>
