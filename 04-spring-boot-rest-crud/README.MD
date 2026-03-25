@@ -1,4 +1,4 @@
-# Curso Spring Boot - Sección 4: REST APIs, Spring Data JPA y Spring Data REST
+# Sección 4: REST APIs, Spring Data JPA y Spring Data REST
 
 Este documento es una referencia detallada y exhaustiva de la Sección 4 del curso. Cubre la creación de APIs RESTful desde cero, el manejo profesional de excepciones y la evolución arquitectónica hacia la automatización extrema con Spring Data.
 

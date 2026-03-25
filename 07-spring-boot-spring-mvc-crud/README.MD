@@ -1,4 +1,4 @@
-# Curso Spring Boot - Sección 7: Spring MVC CRUD
+# Sección 7: Spring MVC CRUD
 
 Este documento resume la integración de **Spring MVC** con **Spring Data JPA** para construir una aplicación web Full-Stack con capacidades CRUD (Create, Read, Update, Delete). En esta sección, conectamos una interfaz gráfica construida con Thymeleaf a una base de datos relacional mediante una arquitectura limpia de tres capas.
 

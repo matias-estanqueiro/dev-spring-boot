@@ -1,4 +1,4 @@
-# 📚 Sección 9: Mapeos Avanzados de Hibernate y JPA
+# Sección 9: Mapeos Avanzados de Hibernate y JPA
 
 Este documento es una guía definitiva y un "Cheat Sheet" detallado sobre cómo manejar relaciones complejas en bases de datos relacionales utilizando Spring Boot, JPA y Hibernate. 
 

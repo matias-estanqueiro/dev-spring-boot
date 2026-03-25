@@ -1,4 +1,4 @@
-# Curso Spring Boot - Sección 6: Spring MVC, Thymeleaf y Validaciones
+# Sección 6: Spring MVC, Thymeleaf y Validaciones
 
 Este documento resume los conceptos clave para la creación de aplicaciones web (Frontend y Backend) utilizando el patrón arquitectónico Model-View-Controller (MVC) nativo de Spring, la renderización de vistas con Thymeleaf y la validación robusta de datos de formularios.
 

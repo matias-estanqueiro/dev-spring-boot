@@ -1,4 +1,4 @@
-# Curso Spring Boot - Sección 8: Spring MVC Security
+# Sección 8: Spring MVC Security
 
 Este documento resume la integración de **Spring Security** con aplicaciones web basadas en **Spring MVC y Thymeleaf**. En esta sección, pasamos de proteger simples APIs REST a blindar una interfaz gráfica completa, controlando qué ven y a dónde pueden acceder los usuarios según sus roles.
 

@@ -1,4 +1,4 @@
-# Spring Boot QuickStart: Resumen de la Sección 1
+# Sección 1: QuickStart
 
 Este documento compila los conceptos fundamentales y las herramientas operativas para la inicialización de un proyecto en Spring Boot, basados en la sección 1 del curso.
 

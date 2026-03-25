@@ -1,4 +1,4 @@
-# Spring Core: Resumen de la Sección 2
+# Sección 2: Spring Core
 
 Esta sección introduce el corazón de la arquitectura de Spring Framework, centrándose en cómo el framework toma el control del ciclo de vida de los objetos y sus dependencias para crear aplicaciones desacopladas y escalables.
 

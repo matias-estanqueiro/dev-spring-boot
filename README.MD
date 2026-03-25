@@ -11,6 +11,12 @@ El objetivo de este proyecto es documentar la progresión técnica desde los fun
 * **Gestor de Construcción:** Maven (vía Maven Wrapper local)
 * **Entorno de Desarrollo:** Visual Studio Code (VS Code)
 
+### 🗄️ Adaptación Enterprise: Microsoft SQL Server (T-SQL)
+A diferencia del diseño original de estos ejercicios (basados en MySQL), he tomado la iniciativa de migrar y adaptar toda la capa de persistencia para trabajar exclusivamente con **Microsoft SQL Server**. Los scripts SQL utilizados en las prácticas fueron refactorizados a T-SQL, lo que demuestra la flexibilidad arquitectónica de **Spring Data JPA** y **Hibernate** al cambiar el driver JDBC y el dialecto subyacente. Esta adaptación incluyó:
+* Migración de secuencias y autoincrementables (`AUTO_INCREMENT` a `IDENTITY`).
+* Refactorización de la creación y limpieza de bases de datos (`DROP SCHEMA` a nivel de `USE master`).
+* Configuración de conexiones robustas y resolución de compatibilidades en entornos *Microsoft*.
+
 ## Estructura del Repositorio
 
 El repositorio está organizado en subdirectorios que corresponden a las secciones del curso. Cada carpeta es un proyecto Spring Boot independiente y contiene su propio archivo `README.md` con el resumen teórico detallado de los conceptos aplicados.
@@ -23,8 +29,9 @@ El repositorio está organizado en subdirectorios que corresponden a las seccion
 * **/06-spring-boot-spring-mvc:** Desarrollo de aplicaciones web con el patrón Model-View-Controller. Renderización de vistas dinámicas en el servidor utilizando **Thymeleaf** (Data Binding, atributos `th:`). Implementación de validaciones robustas de formularios con **Jakarta Bean Validation** (`@Valid`, `@NotNull`, `@Size`, `@Pattern`). Manejo de errores con `BindingResult`, personalización de mensajes (`messages.properties`), pre-procesamiento de peticiones con `@InitBinder` y creación de anotaciones de validación personalizadas (Custom Constraints).
 * **/07-spring-boot-spring-mvc-crud:** Integración Full-Stack. Unión de Spring MVC, Thymeleaf y Spring Data JPA para construir una aplicación web completa con operaciones CRUD (Create, Read, Update, Delete). Implementación de buenas prácticas arquitectónicas como el patrón **Post/Redirect/Get (PRG)** para el manejo seguro de formularios, data binding avanzado para pre-rellenar datos en vistas de actualización, y generación de enlaces dinámicos con parámetros de consulta.
 * **/08-spring-boot-spring-mvc-security:** Seguridad avanzada en aplicaciones web MVC. Creación de formularios de login y logout personalizados. Implementación de Control de Acceso Basado en Roles (RBAC) a nivel de rutas (`authorizeHttpRequests`). Manejo de excepciones de seguridad mediante vistas personalizadas de Acceso Denegado (403). Modificación dinámica del DOM HTML (ocultar/mostrar elementos) en base a roles utilizando la librería **Thymeleaf Extras for Spring Security** (`sec:authorize`).
+* **/09-spring-boot-jpa-advanced-mappings:** Mapeos relacionales avanzados y optimización de ORM. Arquitectura profunda de persistencia con Hibernate. Implementación de relaciones de base de datos unidireccionales y bidireccionales (`@OneToOne`, `@OneToMany`, `@ManyToOne`, `@ManyToMany`) controlando el lado propietario (Owning Side con `@JoinColumn` o `@JoinTable`) y el lado inverso (`mappedBy`). Gestión avanzada del ciclo de vida de las entidades (Transient, Managed, Detached) y propagación de operaciones mediante `CascadeType`. Optimización de rendimiento de memoria de la aplicación mediante Fetch Types (`LAZY` vs `EAGER`), mitigación del "Problema N+1" y prevención de errores críticos (`LazyInitializationException`) a través de consultas JPQL optimizadas con `JOIN FETCH` y el manejo explícito de sesiones de base de datos con `@Transactional`.
 
-*(Próximamente: JPA Avanzado - Relaciones y Mapeos).*
+*(Próximamente: AOP).*
 
 ## Ejecución Local
 

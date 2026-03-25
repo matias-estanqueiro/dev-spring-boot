@@ -1,4 +1,4 @@
-# Curso Spring Boot - Sección 5: Spring Security
+# Sección 5: Spring Security
 
 Este documento es una referencia detallada sobre la implementación de seguridad en APIs REST utilizando **Spring Security**. Cubre desde la configuración básica en memoria hasta la autenticación avanzada con base de datos, encriptación de contraseñas y la integración profesional mediante JPA/Hibernate.
 
